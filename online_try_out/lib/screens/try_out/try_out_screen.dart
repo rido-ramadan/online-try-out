@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -7,34 +8,65 @@ import 'package:online_try_out/models/subject.dart';
 import 'package:online_try_out/screens/try_out/widgets/subject_problem_set.dart';
 
 class TryOutScreen extends StatelessWidget {
-
   TryOutScreen({Key? key}) : super(key: key);
 
-  Future<Subject> _loadSubjectProblemSet() async {
+  Future<List<Subject>> _loadSubjects() async {
     final jsonString = await rootBundle.loadString('assets/problem-set.json');
-    return Subject.fromJson(jsonDecode(jsonString)["subjects"][0]);
+    final output = (jsonDecode(jsonString)["subjects"] as List)
+        .map((e) => Subject.fromJson(e))
+        .toList();
+
+    output.forEach((subject) {
+      subject.problemSet?.forEach((questionGroup) {
+        questionGroup.questions.shuffle();
+      });
+      subject.problemSet?.shuffle();
+    });
+
+    return output;
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Try Out"),
-      ),
-      body: ListView(
-        children: [
-          FutureBuilder<Subject>(
-            future: _loadSubjectProblemSet(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                final subject = snapshot.data!;
-                return SubjectProblemSetWidget(subject: subject);
-              }
-              return Container();
-            },
-          ),
-        ],
-      ),
+    return FutureBuilder<List<Subject>>(
+      future: _loadSubjects(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          final subjects = snapshot.data!;
+
+          return DefaultTabController(
+            length: subjects.length,
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text("Try Out"),
+                bottom: TabBar(
+                  isScrollable: true,
+                  tabs: List.generate(subjects.length,
+                      (index) => Tab(text: subjects[index].name)),
+                ),
+              ),
+              body: TabBarView(
+                children: List.generate(
+                    subjects.length,
+                    (index) => ListView(
+                          children: [
+                            SubjectProblemSetWidget(subject: subjects[index]),
+                          ],
+                        )),
+              ),
+              floatingActionButton: FloatingActionButton(
+                child: Icon(Icons.check),
+                onPressed: () {
+                  if (kDebugMode) print(jsonEncode(subjects));
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Belum dibuat")));
+                },
+              ),
+            ),
+          );
+        }
+
+        return Container();
+      },
     );
   }
 }
