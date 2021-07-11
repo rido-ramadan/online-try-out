@@ -1,0 +1,71 @@
+{
+  "scoring_system": {
+    "correct": 1,
+    "incorrect": 0,
+    "empty": 0
+  },
+  "subjects": [
+    {
+      "id": "subject-01-math",
+      "name": "Matematika",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "math-8-1213",
+          "grade": "8",
+          "subject": "subject-01-math",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "essay": "Diketahui lingkaran dengan radius 5cm.",
+          "questions": [
+            {
+              "id": "q-math-8-0wadaf",
+              "question": "Berapa luas area lingkaran tersebut?",
+              "options": [
+                "pi x 10cm^2",
+                "pi x 25cm^2",
+                "pi x 50cm^2",
+                "pi x 100cm^2"
+              ]
+            },
+            {
+              "id": "q-math-8-0sda2",
+              "question": "Berapa keliling lingkaran tersebut?",
+              "options": [
+                "pi x 10cm",
+                "pi x 20cm",
+                "pi x 30cm",
+                "pi x 40cm"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "math-8-1298",
+          "grade": "8",
+          "subject": "subject-01-math",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "questions": [
+            {
+              "id": "q-math-9-9dwwfwd",
+              "question": "Diketahui segitiga siku-siku dengan alas a = 3cm, tinggi t = 4cm, dan hipotenusa r = 5cm, dan sudut theta berada diantara sisi a dan r. Berapa nilai dari tan theta?",
+              "options": [
+                "3/5",
+                "4/5",
+                "4/3",
+                "3/4"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
