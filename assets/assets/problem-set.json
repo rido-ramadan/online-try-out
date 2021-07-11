@@ -1,0 +1,220 @@
+{
+  "scoring_system": {
+    "correct": 1,
+    "incorrect": 0,
+    "empty": 0
+  },
+  "subjects": [
+    {
+      "id": "subject-01-math",
+      "name": "Matematika",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "math-8-1213",
+          "grade": "8",
+          "subject": "subject-01-math",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "essay": "Diketahui lingkaran dengan radius 5cm.",
+          "image_url": "https://www.vedantu.com/question-sets/0eccf1da-d7e4-40af-8408-d0528dba144e5311042824339314608.png",
+          "questions": [
+            {
+              "id": "q-math-8-0wadaf",
+              "question": "Berapa luas area lingkaran tersebut?",
+              "options": [
+                "pi x 10cm²",
+                "pi x 25cm²",
+                "pi x 50cm²",
+                "pi x 100cm²"
+              ]
+            },
+            {
+              "id": "q-math-8-0sda2",
+              "question": "Berapa keliling lingkaran tersebut?",
+              "options": [
+                "pi x 10cm",
+                "pi x 20cm",
+                "pi x 30cm",
+                "pi x 40cm"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "math-8-1298",
+          "grade": "8",
+          "subject": "subject-01-math",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "image_url": "https://mathproblem.files.wordpress.com/2017/02/6.jpg",
+          "questions": [
+            {
+              "id": "q-math-9-9dwwfwd",
+              "question": "Diketahui segitiga siku-siku dengan alas AB = 3cm, tinggi BC = 4cm, dan sisi AC = 5cm, Berapa nilai dari tan sudut AC?",
+              "options": [
+                "3/5",
+                "4/5",
+                "4/3",
+                "3/4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-02-eng",
+      "name": "B. Inggris",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "eng-8-0001",
+          "grade": "8",
+          "subject": "subject-02-eng",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "essay": "Once upon a time, Alice ventured into a unknown hole deep inside a forest. Unbeknownst to her, that falling into that hole delivered her to a world never seen before.",
+          "questions": [
+            {
+              "id": "q-eng-8-01dgkd",
+              "question": "Where Alice went to?",
+              "options": [
+                "Town",
+                "Village",
+                "Forest",
+                "Lake"
+              ]
+            },
+            {
+              "id": "q-eng-8-020242",
+              "question": "What did Alice found?",
+              "options": [
+                "Tree",
+                "House",
+                "Hole",
+                "Lake"
+              ]
+            },
+            {
+              "id": "q-eng-8-08dapso",
+              "question": "Where Alice ended up into?",
+              "options": [
+                "Her home",
+                "Mysterious forest",
+                "Unknown village",
+                "Unknown realm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-03-phys",
+      "name": "Fisika",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "phys-8-0001",
+          "grade": "8",
+          "subject": "subject-03-phys",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "questions": [
+            {
+              "id": "q-phys-8-01dgkd",
+              "question": "Sebuah kardus bermassa 5kg didorong dan mengalami percepatan 1m/s. Berapa gaya dorong yang diberikan pada kardus tersebut?",
+              "options": [
+                "1N",
+                "2N",
+                "5N",
+                "10N"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-04-bio",
+      "name": "Biologi",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "bio-8-0001",
+          "grade": "8",
+          "subject": "subject-03-bio",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "questions": [
+            {
+              "id": "q-bio-8-01dgkd",
+              "question": "Proses respirasi aerob yang menghasilkan energi disebut ...",
+              "options": [
+                "Fotosintesis",
+                "Fiksasi",
+                "Siklus Krebs",
+                "Metabolisme"
+              ]
+            },
+            {
+              "id": "q-bio-8-07242",
+              "question": "Proses respirasi anaerob menyebabkan pegal pada otot karena adanya penumpukan ...",
+              "options": [
+                "Asam sianida",
+                "Asam sulfat",
+                "Asam asetat",
+                "Asam laktat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-05-chem",
+      "name": "Kimia",
+      "grade": "8",
+      "problem_set": [
+        {
+          "id": "chem-8-0001",
+          "grade": "8",
+          "subject": "subject-05-chem",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "questions": [
+            {
+              "id": "q-chem-8-01dgkd",
+              "question": "2H₂ + O₂ => ...",
+              "options": [
+                "2H₂O",
+                "H₂O",
+                "HO",
+                "HO₂"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
