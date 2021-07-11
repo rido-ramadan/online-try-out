@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -39,6 +40,7 @@ class TryOutScreen extends StatelessWidget {
               appBar: AppBar(
                 title: Text("Try Out"),
                 bottom: TabBar(
+                  isScrollable: true,
                   tabs: List.generate(subjects.length,
                       (index) => Tab(text: subjects[index].name)),
                 ),
@@ -55,7 +57,8 @@ class TryOutScreen extends StatelessWidget {
               floatingActionButton: FloatingActionButton(
                 child: Icon(Icons.check),
                 onPressed: () {
-                  print(jsonEncode(subjects));
+                  if (kDebugMode) print(jsonEncode(subjects));
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Belum dibuat")));
                 },
               ),
             ),
