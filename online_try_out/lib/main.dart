@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:online_try_out/screens/try_out/try_out_screen.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 
