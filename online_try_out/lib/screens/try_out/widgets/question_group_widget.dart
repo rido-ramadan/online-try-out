@@ -36,6 +36,10 @@ class QuestionGroupWidget extends StatelessWidget {
         ),
       );
     }
+
+    // Shuffle:
+    group.questions.shuffle();
+
     final questionWidgets = group.questions
         .asMap()
         .map((i, q) => MapEntry(i, QuestionWidget(index: (i + 1), question: q)))
