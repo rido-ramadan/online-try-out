@@ -16,13 +16,13 @@ class Subject {
   final String grade;
 
   @JsonKey(name: 'problem_set')
-  final List<QuestionGroup> problemSet;
+  List<QuestionGroup>? problemSet;
 
   Subject({
     required this.id,
     required this.name,
     required this.grade,
-    required this.problemSet,
+    this.problemSet,
   });
 
   factory Subject.fromJson(Map<String, dynamic> json) => _$SubjectFromJson(json);

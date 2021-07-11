@@ -9,7 +9,7 @@
       "id": "subject-01-math",
       "name": "Matematika",
       "grade": "8",
-      "problem_group": [
+      "problem_set": [
         {
           "id": "math-8-1213",
           "grade": "8",
@@ -39,6 +39,28 @@
                 "pi x 20cm",
                 "pi x 30cm",
                 "pi x 40cm"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "math-8-1298",
+          "grade": "8",
+          "subject": "subject-01-math",
+          "scoring_system": {
+            "correct": 1,
+            "incorrect": 0,
+            "empty": 0
+          },
+          "questions": [
+            {
+              "id": "q-math-9-9dwwfwd",
+              "question": "Diketahui segitiga siku-siku dengan alas a = 3cm, tinggi t = 4cm, dan hipotenusa r = 5cm, dan sudut theta berada diantara sisi a dan r. Berapa nilai dari tan theta?",
+              "options": [
+                "3/5",
+                "4/5",
+                "4/3",
+                "3/4"
               ]
             }
           ]

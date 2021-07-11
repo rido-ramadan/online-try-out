@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_try_out/screens/try_out_screen.dart';
+import 'package:online_try_out/screens/try_out/try_out_screen.dart';
 
 void main() {
   runApp(MyApp());
